@@ -1,0 +1,188 @@
+[
+    {
+        "customerName": "Hersh Savaliya",
+        "customerPhone": "123-456-7890",
+        "date": "2023-06-01",
+        "time": "12:30",
+        "items": [
+            { "name": "Pizza", "quantity": 2, "price": 10 }
+        ],
+        "status": "Request For Payment",
+        "totalBill": 200,
+        "PaymentType": "Cash"
+    },
+    {
+        "customerName": "Pratik Savaliya",
+        "customerPhone": "987-654-3210",
+        "date": "2023-06-02",
+        "time": "13:45",
+        "items": [
+            { "name": "Pasta", "quantity": 1, "price": 8 }
+        ],
+        "status": "In Progress",
+        "totalBill": 800,
+        "PaymentType": "Card"
+    },
+    {
+        "customerName": "Vermillion Tech",
+        "customerPhone": "555-123-4567",
+        "date": "2023-06-03",
+        "time": "14:00",
+        "items": [
+            { "name": "Steak", "quantity": 2, "price": 15 }
+        ],
+        "status": "Delivered",
+        "totalBill": 300,
+        "PaymentType": "Online"
+    },
+    {
+        "customerName": "Rajesh Kumar",
+        "customerPhone": "321-654-9870",
+        "date": "2023-06-04",
+        "time": "15:00",
+        "items": [
+            { "name": "Burger", "quantity": 3, "price": 5 }
+        ],
+        "status": "Request For Payment",
+        "totalBill": 100,
+        "PaymentType": "Cash"
+    },
+    {
+        "customerName": "Anita Sharma",
+        "customerPhone": "432-765-0987",
+        "date": "2023-06-05",
+        "time": "16:30",
+        "items": [
+            { "name": "Salad", "quantity": 2, "price": 7 }
+        ],
+        "status": "In Progress",
+        "totalBill": 100,
+        "PaymentType": "Card"
+    },
+    {
+        "customerName": "Acme Corp",
+        "customerPhone": "654-321-1234",
+        "date": "2023-06-06",
+        "time": "17:45",
+        "items": [
+            { "name": "Sushi", "quantity": 5, "price": 12 }
+        ],
+        "status": "Delivered",
+        "totalBill": 600,
+        "PaymentType": "Online"
+    },
+    {
+        "customerName": "Suresh Patel",
+        "customerPhone": "765-432-9876",
+        "date": "2023-06-07",
+        "time": "18:00",
+        "items": [
+            { "name": "Tacos", "quantity": 4, "price": 3 },
+            { "name": "Biryani", "quantity": 1, "price": 200 },
+            { "name": "Rasgulla", "quantity": 3, "price": 30 },
+            { "name": "Samosa", "quantity": 5, "price": 20 }
+        ],
+        "status": "Request For Payment",
+        "totalBill": 100,
+        "PaymentType": "Cash"
+    },
+    {
+        "customerName": "Meena Gupta",
+        "customerPhone": "876-543-2109",
+        "date": "2023-06-08",
+        "time": "19:30",
+        "items": [
+            { "name": "Soup", "quantity": 3, "price": 4 },
+            { "name": "Biryani", "quantity": 1, "price": 200 },
+            { "name": "Rasgulla", "quantity": 3, "price": 30 },
+            { "name": "Samosa", "quantity": 5, "price": 20 }
+        ],
+        "status": "In Progress",
+        "totalBill": 100,
+        "PaymentType": "Card"
+    },
+    {
+        "customerName": "Arjun Desai",
+        "customerPhone": "987-654-3210",
+        "date": "2023-06-09",
+        "time": "20:00",
+        "items": [
+            { "name": "Sandwich", "quantity": 2, "price": 6 }
+        ],
+        "status": "Delivered",
+        "totalBill": 100,
+        "PaymentType": "Online"
+    },
+    {
+        "customerName": "Ravi Singh",
+        "customerPhone": "098-765-4321",
+        "date": "2023-06-10",
+        "time": "21:00",
+        "items": [
+            { "name": "Fries", "quantity": 1, "price": 3 }
+        ],
+        "status": "Request For Payment",
+        "totalBill": 300,
+        "PaymentType": "Cash"
+    },
+    {
+        "customerName": "Sneha Verma",
+        "customerPhone": "210-987-6543",
+        "date": "2023-06-11",
+        "time": "22:30",
+        "items": [
+            { "name": "Ice Cream", "quantity": 2, "price": 5 }
+        ],
+        "status": "In Progress",
+        "totalBill": 100,
+        "PaymentType": "Card"
+    },
+    {
+        "customerName": "Pooja Iyer",
+        "customerPhone": "321-098-7654",
+        "date": "2023-06-12",
+        "time": "23:45",
+        "items": [
+            { "name": "Nachos", "quantity": 3, "price": 4 }
+        ],
+        "status": "Delivered",
+        "totalBill": 100,
+        "PaymentType": "Online"
+    },
+    {
+        "customerName": "Vikas Nair",
+        "customerPhone": "432-109-8765",
+        "date": "2023-06-13",
+        "time": "12:00",
+        "items": [
+            { "name": "Wings", "quantity": 6, "price": 2 }
+        ],
+        "status": "Request For Payment",
+        "totalBill": 100,
+        "PaymentType": "Cash"
+    },
+    {
+        "customerName": "Priya Kapoor",
+        "customerPhone": "543-210-9876",
+        "date": "2023-06-14",
+        "time": "13:30",
+        "items": [
+            { "name": "Hot Dog", "quantity": 4, "price": 3 }
+        ],
+        "status": "In Progress",
+        "totalBill": 100,
+        "PaymentType": "Card"
+    },
+    {
+        "customerName": "Manish Tiwari",
+        "customerPhone": "654-321-0987",
+        "date": "2023-06-15",
+        "time": "14:00",
+        "items": [
+            { "name": "Pizza", "quantity": 2, "price": 10 }
+        ],
+        "status": "Delivered",
+        "totalBill": 200,
+        "PaymentType": "Online"
+    }
+]

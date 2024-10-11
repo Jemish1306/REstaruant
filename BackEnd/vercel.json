@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "MONGO_API_URL": "https://ap-south-1.aws.data.mongodb-api.com/app/data-srrocgk/endpoint/data/v1",
+    "MONGO_API_KEY": "uYpKH1evFS5PtGfL5dAD1SDizPJOAdkGF12GCZyWyJwmCTxPRhJqEV21u36Dzyvd",
+    "PORT": "9898"
+  }
+}

@@ -1,0 +1,394 @@
+  [
+  {
+    "itemName": "Paneer Butter Masala",
+    "ingredients": "Paneer, Butter, Tomato, Cream, Spices",
+    "itemPrice": 250,
+    "itemImage":"https://media.istockphoto.com/id/496389174/photo/delicious-hamburgers.jpg?s=2048x2048&w=is&k=20&c=Zt7KQUoAVrtybSF6C0EHe8n3_Qp_nn3KPxconWSUpvg=",
+    "discount": 10,
+    "category": "French Fries",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Delicious paneer cooked in a rich buttery tomato sauce with a blend of spices.",
+    "customizations": [
+      {
+        "name": "Extra Butter",
+        "detail": "Add extra butter to the dish",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Masala Dosa",
+    "ingredients": "Rice, Urad Dal, Potato, Onion, Spices",
+    "itemPrice": 150,
+    "itemImage":"https://th.bing.com/th/id/OIP.XSCo5S6kP3o-7-jVqH4vGgHaE8?rs=1&pid=ImgDetMain",
+    "discount": 5,
+    "category": "Drink Juice",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Crispy dosa filled with a spicy potato mixture, served with chutney.",
+    "customizations": [
+      {
+        "name": "Extra Chutney",
+        "detail": "Add extra chutney",
+        "rate": 10
+      },
+      {
+        "name": "No Onion",
+        "detail": "Remove onion from the filling",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Veg Pulao",
+    "ingredients": "Basmati Rice, Mixed Vegetables, Spices",
+    "itemPrice": 200,
+    "itemImage":"https://th.bing.com/th/id/OIP.XY6yPAUI9nkEVYxDoIgMaAHaE0?rs=1&pid=ImgDetMain",
+    "discount": 5,
+    "category": "French Fries",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Fluffy basmati rice cooked with mixed vegetables and aromatic spices.",
+    "customizations": [
+      {
+        "name": "Extra Vegetables",
+        "detail": "Add more vegetables",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Gulab Jamun",
+    "ingredients": "Milk Solids, Sugar, Rose Water",
+    "itemPrice": 100,
+    "itemImage":"https://th.bing.com/th/id/OIP.R3Cn0sET3iY0a6C-s0umiQHaEt?rs=1&pid=ImgDetMain",
+    "discount": 10,
+    "category": "Sandwich",
+    "spicyLevel": "Sweet",
+    "isVeg": true,
+    "description": "Soft milk-based balls soaked in a sweet rose-flavored syrup.",
+    "customizations": [
+      {
+        "name": "Extra Syrup",
+        "detail": "Add more syrup",
+        "rate": 10
+      },
+      {
+        "name": "Less Sweet",
+        "detail": "Reduce the sweetness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Chole Bhature",
+    "ingredients": "Chickpeas, Spices, Flour, Yogurt",
+    "itemPrice": 150,
+    "itemImage":"https://2.bp.blogspot.com/-OU_L_dlS_G0/Wx9rVpMKeVI/AAAAAAAAAEE/lL6pyCPBVoQkBxbpYZg9wRt6-Lce51C7ACLcBGAs/s1600/imperial%2Binn.jpg",
+   "discount": 5,
+    "category": "Drink Juice",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Spicy chickpeas served with deep-fried bread.",
+    "customizations": [
+      {
+        "name": "Extra Bhature",
+        "detail": "Add an extra bhature",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Pav Bhaji",
+    "ingredients": "Mixed Vegetables, Spices, Butter, Bread",
+    "itemPrice": 120,
+    "itemImage":"https://img-global.cpcdn.com/recipes/58290099f9d4f97e/1502x1064cq70/pav-bhaji-recipe-recipe-main-photo.jpg",
+    "discount": 5,
+    "category": "Ice Cream",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Spiced vegetable mash served with buttered bread rolls.",
+    "customizations": [
+      {
+        "name": "Extra Butter",
+        "detail": "Add extra butter",
+        "rate": 10
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Samosa",
+    "ingredients": "Potato, Peas, Spices, Flour",
+    "itemPrice": 50,
+    "itemImage":"https://th.bing.com/th/id/R.5e9d914158f20abde43751bc56170aff?rik=IVjPf86fA0ExdQ&riu=http%3a%2f%2fwww.zedamagazine.com%2fwp-content%2fuploads%2f2018%2f06%2fIndian-Food-Samosa-Dish-HD-Wallpapers.jpg&ehk=CIZsxVe5CLA%2fpZXkiCdJuoTdrhucm2fgYqo%2fkXVfHls%3d&risl=&pid=ImgRaw&r=0",
+    "discount": 5,
+    "category": "Ice Cream",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Crispy pastry filled with spiced potatoes and peas.",
+    "customizations": [
+      {
+        "name": "Extra Chutney",
+        "detail": "Add extra chutney",
+        "rate": 10
+      },
+      {
+        "name": "No Peas",
+        "detail": "Remove peas from the filling",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Aloo Paratha",
+    "ingredients": "Potato, Flour, Spices, Butter",
+    "itemPrice": 80,
+    "itemImage":"https://images.saymedia-content.com/.image/t_share/MTc0NDI5MDA3MTIxNDkxMzA0/authentic-punjabi-aloo-paratha-recipe-potato-stuffed-paratha.jpg",
+    "discount": 5,
+    "category": "Drink Juice",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Stuffed flatbread with a spicy potato filling, served with butter and yogurt.",
+    "customizations": [
+      {
+        "name": "Extra Butter",
+        "detail": "Add extra butter",
+        "rate": 10
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Palak Paneer",
+    "ingredients": "Paneer, Spinach, Cream, Spices",
+    "itemPrice": 220,
+    "itemImage":"https://latashaskitchen.com/wp-content/uploads/2019/06/SS_533073802_Palak-Paneer_500k.jpg",
+    "discount": 10,
+    "category": "French Fries",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Paneer cubes cooked in a creamy spinach gravy with spices.",
+    "customizations": [
+      {
+        "name": "Extra Paneer",
+        "detail": "Add extra paneer",
+        "rate": 30
+      },
+      {
+        "name": "Less Cream",
+        "detail": "Reduce the cream",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Pani Puri",
+    "ingredients": "Flour, Semolina, Potato, Chickpeas, Spices",
+    "itemPrice": 60,
+    "itemImage":"https://recipes.timesofindia.com/photo/61048461.cms?imgsize=506987",
+    "discount": 5,
+    "category": "Ice Cream",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Crispy puris filled with spicy and tangy water, potatoes, and chickpeas.",
+    "customizations": [
+      {
+        "name": "Extra Spicy",
+        "detail": "Increase the spiciness",
+        "rate": 0
+      },
+      {
+        "name": "Sweet Chutney",
+        "detail": "Add sweet chutney",
+        "rate": 10
+      }
+    ]
+  },
+  {
+    "itemName": "Paneer Tikka",
+    "ingredients": "Paneer, Yogurt, Spices, Capsicum",
+    "itemPrice": 280,
+    "itemImage":"https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2017/03/Paneer-Tikka-Masala-4.jpg?fit=1024%2C683&ssl=1",
+    "discount": 10,
+    "category": "Burger",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Grilled paneer marinated in spiced yogurt, served with capsicum and onion.",
+    "customizations": [
+      {
+        "name": "Extra Paneer",
+        "detail": "Add extra paneer",
+        "rate": 40
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Vegetable Manchurian",
+    "ingredients": "Mixed Vegetables, Soy Sauce, Garlic, Spices",
+    "itemPrice": 220,
+    "itemImage":"https://i.ytimg.com/vi/G5iUqkCLybU/maxresdefault.jpg",
+    "discount": 5,
+    "category": "Burger",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Vegetable balls in a spicy and tangy sauce.",
+    "customizations": [
+      {
+        "name": "Extra Sauce",
+        "detail": "Add more sauce",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Bhindi Masala",
+    "ingredients": "Okra, Onion, Tomato, Spices",
+    "itemPrice": 180,
+    "itemImage":"https://bing.com/th?id=OSK.aec9fe7def94d0ca46e03b90da7fa5f8",
+    "discount": 5,
+    "category": "French Fries",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Okra cooked with onions, tomatoes, and spices.",
+    "customizations": [
+      {
+        "name": "Extra Okra",
+        "detail": "Add more okra",
+        "rate": 20
+      },
+      {
+        "name": "Less Oil",
+        "detail": "Reduce the oil used",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Dal Tadka",
+    "ingredients": "Lentils, Garlic, Spices, Ghee",
+    "itemPrice": 160,
+    "itemImage":"https://www.archanaskitchen.com/images/archanaskitchen/Indian_Dal_Khadi_Curry/Punjabi_Dal_Tadka_Recipe-1.jpg",
+    "discount": 5,
+    "category": "French Fries",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Lentils cooked with garlic and spices, tempered with ghee.",
+    "customizations": [
+      {
+        "name": "Extra Ghee",
+        "detail": "Add more ghee",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Malai Kofta",
+    "ingredients": "Paneer, Potato, Cream, Spices",
+    "itemPrice": 250,
+    "itemImage":"https://www.thecuriouschickpea.com/wp-content/uploads/2018/03/malaikofta-4.jpg",
+   
+    "discount": 10,
+    "category": "French Fries",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Soft paneer and potato dumplings in a rich creamy gravy.",
+    "customizations": [
+      {
+        "name": "Extra Gravy",
+        "detail": "Add more gravy",
+        "rate": 30
+      },
+      {
+        "name": "Less Cream",
+        "detail": "Reduce the cream",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Gajar Halwa",
+    "ingredients": "Carrot, Milk, Sugar, Ghee",
+    "itemPrice": 120,
+    "itemImage":"https://th.bing.com/th/id/OIP.Is9EUyWFN2-0hSa9ALhJYgHaFC?rs=1&pid=ImgDetMain",
+    "discount": 5,
+    "category": "Sandwich",
+    "spicyLevel": "Sweet",
+    "isVeg": true,
+    "description": "Sweet carrot pudding made with milk and ghee.",
+    "customizations": [
+      {
+        "name": "Extra Ghee",
+        "detail": "Add more ghee",
+        "rate": 10
+      },
+      {
+        "name": "Less Sweet",
+        "detail": "Reduce the sweetness",
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "itemName": "Paneer Pakora",
+    "ingredients": "Paneer, Gram Flour, Spices",
+    "itemPrice": 150,
+    "itemImage":"https://th.bing.com/th/id/OIP.znigEnkldmeqOV6UJ2FqZQHaE7?rs=1&pid=ImgDetMain",
+    "discount": 5,
+    "category": "Burger",
+    "spicyLevel": "Medium",
+    "isVeg": true,
+    "description": "Paneer pieces dipped in a spiced gram flour batter and deep-fried.",
+    "customizations": [
+      {
+        "name": "Extra Pakoras",
+        "detail": "Add more pakoras",
+        "rate": 20
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]
+  }
+]

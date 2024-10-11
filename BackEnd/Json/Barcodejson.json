@@ -1,0 +1,52 @@
+[
+   { "tableNumber": "Table No - 1",
+    "itemName": "Aloo Paratha",
+    "ingredients": "Potato, Flour, Spices, Butter",
+    "itemPrice": 80,
+    "itemImage": "https://images.saymedia-content.com/.image/t_share/MTc0NDI5MDA3MTIxNDkxMzA0/authentic-punjabi-aloo-paratha-recipe-potato-stuffed-paratha.jpg",
+    "discount": 5,
+    "category": "Drink Juice",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Stuffed flatbread with a spicy potato filling, served with butter and yogurt.",
+    "customizations": [
+      {
+        "name": "Extra Butter",
+        "detail": "Add extra butter",
+        "rate": 10
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]},
+
+
+
+    {"tableNumber": "Table No - 1",
+    "itemName": "Aloo Paratha",
+    "ingredients": "Potato, Flour, Spices, Butter",
+    "itemPrice": 80,
+    "itemImage": "https://images.saymedia-content.com/.image/t_share/MTc0NDI5MDA3MTIxNDkxMzA0/authentic-punjabi-aloo-paratha-recipe-potato-stuffed-paratha.jpg",
+    "discount": 5,
+    "category": "Drink Juice",
+    "spicyLevel": "Mild",
+    "isVeg": true,
+    "description": "Stuffed flatbread with a spicy potato filling, served with butter and yogurt.",
+    "customizations": [
+      {
+        "name": "Extra Butter",
+        "detail": "Add extra butter",
+        "rate": 10
+      },
+      {
+        "name": "Less Spicy",
+        "detail": "Reduce the spiciness",
+        "rate": 0
+      }
+    ]}
+    ]
+ 
+
+  
