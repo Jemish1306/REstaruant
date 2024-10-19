@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Layout from './../Shared/Layout';
+
 const ItemDetails = () => {
+  const navigate = useNavigate();
   const { state } = useLocation(); // Get passed item data from useLocation
-  const { item } = state || {}; // Extract the item from the state (fallback if item is not passed)
   
+  const { item, cartItems = [] } = state || {};
   const [cart, setCart] = useState([]);
   const [step, setStep] = useState(1);
   const [customization, setCustomization] = useState({
@@ -12,12 +14,10 @@ const ItemDetails = () => {
     size: '',
     toppings: []
   });
-  
+
   if (!item) {
     return <p>No item data available. Please go back to the menu and select an item.</p>;
   }
-  
-  const navigate = useNavigate();
 
   // Crust options for Step 1
   const crustOptions = [
@@ -29,9 +29,9 @@ const ItemDetails = () => {
 
   // Size options for Step 2
   const sizeOptions = [
-    { name: 'Medium', price: 200 },
-    { name: 'Large', price: 700 },
-    { name: 'Regular', price: 300 }
+    { name: 'Medium' },
+    { name: 'Large' },
+    { name: 'Regular' }
   ];
 
   // Step 3: Ingredients - We assume the ingredients are already available in the item object
@@ -52,36 +52,42 @@ const ItemDetails = () => {
   const handlePreviousStep = () => {
     if (step > 1) setStep(step - 1);
   };
- 
- 
+
+  // const handleAddToCart = () => {
+  //   const newItem = {
+  //     itemId: item._id,
+  //     itemName: item.itemName,
+  //     itemPrice: item.itemPrice,
+  //     itemImage: item.itemImage,
+  //     customizations: { ...customization },
+  //   };
+  
+  //   // Navigate to the Cart page and pass the newItem data as state
+  //   navigate('/cart', { state: { cartItem: newItem } });
+  // };
+  
 
   const handleAddToCart = () => {
-    // Prepare the item data with customization
-    const newItem = {
-      itemId: item._id, // Use item id or any other unique identifier
-      itemName: item.itemName,
-      itemPrice: item.itemPrice,
-      itemImage: item.itemImage,
-      customizations: { ...customization }
-    };
-
-    // Navigate to the Cart page, passing the newItem data
-    navigate('/cart', { state: { cartItem: newItem } });
+    
+    // Add the selected item to the existing cart items
+    const updatedCartItems = [...cartItems, item];
+    navigate('/cart', { state: { cartItems: updatedCartItems } });
   };
 
   return (
     <Layout>
-      <div className="p-4 md:p-8 max-w-md md:max-w-4xl mx-auto   bg-gray-800 rounded-md shadow-lg">
+      <div className="p-4 md:p-8 max-w-full md:max-w-4xl mx-auto bg-gray-800 rounded-md shadow-lg">
+        
         {/* Item Details */}
-        <div className="flex flex-col md:flex-row items-center  ">
-        <img
-  src={item.itemImage && item.itemImage.startsWith('uploads/')
-        ? `http://localhost:3229/${item.itemImage}` // Prepend server URL for 'uploads/' images
-        : item.itemImage || '/uploads/placeholder.jpg'} // Use the HTTP URL, or fallback to a placeholder image
-  alt={item.itemName || 'No Image Available'}
-  className=" h-32 md:h-48 object-cover rounded-t-lg shadow-xl"
-/>
-          <div className='p-4'  >
+        <div className="flex flex-col md:flex-row items-center">
+          <img
+            src={item.itemImage && item.itemImage.startsWith('uploads/')
+              ? `http://localhost:3229/${item.itemImage}` // Prepend server URL for 'uploads/' images
+              : item.itemImage || '/uploads/placeholder.jpg'} // Use the HTTP URL, or fallback to a placeholder image
+            alt={item.itemName || 'No Image Available'}
+            className="w-full h-48 md:h-64 object-cover rounded-lg shadow-xl"
+          />
+          <div className="p-4">
             <h3 className="text-xl md:text-2xl text-white font-semibold">{item.itemName}</h3>
             <p className="text-sm md:text-base text-gray-400">{item.description}</p>
             <div className="flex items-center justify-between mt-4">
@@ -103,7 +109,14 @@ const ItemDetails = () => {
               {crustOptions.map((crust, index) => (
                 <div key={index} className="flex justify-between items-center py-2">
                   <span className="text-white">{crust}</span>
-                  <input type="radio" name="crust" value={crust} onChange={handleCrustChange} />
+                  <input
+                    type="radio"
+                    name="crust"
+                    value={crust}
+                      
+                    onChange={handleCrustChange}
+                    className="accent-yellow-500" 
+                  />
                 </div>
               ))}
             </div>
@@ -115,8 +128,14 @@ const ItemDetails = () => {
               <p className="text-gray-400">Size</p>
               {sizeOptions.map((size, index) => (
                 <div key={index} className="flex justify-between items-center py-2">
-                  <span className="text-white">{size.name} (₹{size.price})</span>
-                  <input type="radio" name="size" value={size.name} onChange={handleSizeChange} />
+                  <span className="text-white">{size.name}</span>
+                  <input
+                    type="radio"
+                    name="size"
+                    value={size.name}
+                    onChange={handleSizeChange}
+                    className="accent-yellow-500" 
+                  />
                 </div>
               ))}
             </div>
@@ -150,7 +169,7 @@ const ItemDetails = () => {
               <button className="bg-gradient-to-r from-yellow-500 to-blue-400 hover:bg-yellow-500 text-black py-2 px-4 rounded-md" onClick={handleAddToCart}>
                 Add To Cart
               </button>
-            )}
+            )}  
           </div>
         </div>
       </div>

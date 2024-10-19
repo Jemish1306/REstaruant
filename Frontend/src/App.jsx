@@ -26,6 +26,9 @@ import Cart from "./Components/Customer/Cart";
 import CashPayment from "./Components/Customer/CashPayment";
 import OnlinePayment from "./Components/Customer/OnlinePayment";
 import PaymentSelection from "./Components/Customer/PaymentSelection";
+// import PaymentCard from './Components/Customer/PaymentCard';
+import StripePayment from './Components/Customer/StripePayment';
+
 
 
 
@@ -59,6 +62,8 @@ const App = () => {
          <Route path='/cash-payment' element={<CashPayment/>}/>
          <Route path='/online-payment' element={<OnlinePayment/>}/>
          <Route path='/select-payment' element={<PaymentSelection/>}/>
+         {/* <Route path="/payment-card" element={<PaymentCard />} /> */}
+         <Route path="/payment-card" element={<StripePayment />} />
       </Routes>
       
     </>

@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
         </div>
 
         {/* Main area */}
-        <main className="flex-grow p-8 text-white bg-mainbg">
+        <main className="flex-grow p-4 text-white bg-mainbg">
           {children}
         </main>
       </div>
