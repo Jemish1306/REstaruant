@@ -111,6 +111,7 @@ const deleteItem = async (req, res) => {
 const deletemongoosItem = async()=>{
     try {
         await AddItem.deleteMany({});
+        console.log('item deleteed')
         
     } catch (error) {
         console.log('error', error)

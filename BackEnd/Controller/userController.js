@@ -52,19 +52,6 @@ const updateUser = async (req, res) => {
 
 
 
-const update = ()=>{
-  const userId = req.params.id;
-  const { email } = req.body;
-
-  try {
-    let user
-}
-
-
-
-
-
-
 
 const deleteUser = async (req, res) => {
   const userId = req.params.id;

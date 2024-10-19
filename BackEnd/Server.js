@@ -35,7 +35,7 @@ Server.use(bodyParser.urlencoded({ extended: true }));
 Server.use('/assets', express.static('src/assets'));
 // Check Route
 Server.get('/', (req, res) => {
-  res.send("vercel run");
+  res.send("Server Routes Work");
   console.log("Server Routes work");
 });
 
@@ -49,16 +49,17 @@ Server.get('/api/onsiteorder', getOnsiteOrders);
 Server.get('/api/additem', getItems);
 Server.get('/api/parcelpayment', getParcelPaymentHistory);
 Server.get('/api/onsitepayment', getOnsitePaymentHistory);
-
+Server.get(`/api/parcelpayment/:orderId`, getParcelPaymentBill);
 
 // POST APIs
 Server.post('/api/auth/login', login);
 Server.post('/api/auth/register', register);
 Server.post('/api/auth/forgotpassword', forgotPassword);
-Server.get(`/api/parcelpayment/:orderId`, getParcelPaymentBill);
+
 Server.post(`/api/onsitepayment/:id`, getOnsitePaymentBill);
 // Server.post('/api/item', createItem);
 // Server.post('/api/item/category',addCategory);
+Server.post('/api/order' , createOrder)
 
 
 // Route APIs
@@ -70,8 +71,8 @@ Server.use('/api/admin', ProductRouter);
 
 // DELETE APIs 
 
-Server.delete(' ', deletemongoosItem);
-Server.delete('/api/detele/barcode' , DataSeed.deletemongooBarcode)
+Server.delete('/api/delate/item ', deletemongoosItem);
+Server.delete('/api/delate/barcode' , DataSeed.deletemongooBarcode)
 
 // PUT APIs 
 Server.put('/api/put/item', getServers);
@@ -86,6 +87,7 @@ Server.get('/api/barcode',getBarcode)
 
 // Seed ips 
 Server.get('/api/additemseed', DataSeed.additemdataadd)
+
 
 
 
@@ -122,6 +124,7 @@ start();
 
 const multer = require('multer');
 const path = require('path');
+const { createOrder } = require("./Controller/OrderController.js");
 
 // Set up Multer storage configuration
 const storage = multer.diskStorage({

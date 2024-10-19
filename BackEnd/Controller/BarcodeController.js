@@ -6,10 +6,10 @@ const bwipjs = require('bwip-js'); // For barcodes
 
 const generateQRCode = async (req, res) => {
   const { name, link, additionalText, qrColor, frameBackground, qrBackground, contentCategory } = req.body;
-
-  try {
-
-    const qrCodeData = await QRCode.toDataURL(link,{ color: {
+  
+    try {
+  
+  const qrCodeData = await QRCode.toDataURL(link,{ color: {
         dark: qrColor || '#000000',  // Set the dark color (default black)
         light: qrBackground || '#ffffff' , // Set the light color (default white)
         frem:frameBackground ||'#ffffff'
@@ -59,7 +59,7 @@ const generateBarcode = async (req, res) => {
         const newBarcode = new Barcode({
           name,
           link,
-          qrCode: barcodeImage, // Save the barcode image as base64
+          qrCode: barcodeImage, 
           type
         });
 
@@ -89,9 +89,6 @@ const getBarcode = async (req, res) => {
     res.status(500).json({ error: 'Server error while fetching barcodes' }); // Return error with 500 status
   }
 };
-
-
-
 
 module.exports = {
   generateQRCode,
